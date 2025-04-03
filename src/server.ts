@@ -1,6 +1,6 @@
 import express from 'express';
-import tweetRoutes from './src/routes/tweet'
-import userRoutes from './src/routes/user'
+import tweetRoutes from './routes/tweet'
+import userRoutes from './routes/user'
 
 const app = express();
 app.use(express.json());
