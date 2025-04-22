@@ -1,6 +1,6 @@
-
+//Carolina de Jesus Ortega Cepeda A01282386
 import {} from "module";
-import TweetService from "../db/tweet";
+import TweetService from "../db/tweets";
 
 class TweetController{
 
@@ -12,7 +12,7 @@ class TweetController{
 
     async getAllTweets() {
         const tweets = this.service.getEverythingTweets(); 
-        return tweets.filter(tweet: => tweet: % 2 === 0); // Filtrar solo los pares
+        return tweets.filter(tweets => tweets % 2 === 0); // Filtrar solo los pares
     }
 }
 
